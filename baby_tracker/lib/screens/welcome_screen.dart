@@ -6,20 +6,29 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      backgroundColor: Colors.pink[50],
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              "👶 Welcome to Baby & Mood Tracker",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            SizedBox(height: 26),
+            Image.asset('assets/images/baby.png'),
+            SizedBox(height: 26),
+            Text(
+              'BABY AND MOOD TRACKER',
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 26,
+                color: Colors.pink[900],
+              ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 26),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/setup');
               },
-              child: const Text("Get Started"),
+              child: Text('Get Start'),
             ),
           ],
         ),

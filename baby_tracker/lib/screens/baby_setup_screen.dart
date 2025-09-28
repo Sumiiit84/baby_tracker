@@ -24,6 +24,7 @@ class _BabySetupScreenState extends State<BabySetupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink[100],
       appBar: AppBar(title: const Text("Setup Baby Profile")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -45,7 +46,7 @@ class _BabySetupScreenState extends State<BabySetupScreen> {
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.calendar_today),
+                  icon: Icon(Icons.calendar_today, color: Colors.pink[300]),
                   onPressed: () async {
                     DateTime? picked = await showDatePicker(
                       context: context,

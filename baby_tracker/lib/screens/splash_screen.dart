@@ -22,8 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
         _controller.play();
       });
 
-    _timer = Timer(const Duration(seconds: 5), () {
-      Navigator.pushReplacementNamed(context, '/');
+    _timer = Timer(const Duration(seconds: 6), () {
+      Navigator.pushReplacementNamed(context, '/welcome');
     });
   }
 
@@ -42,17 +42,14 @@ class _SplashScreenState extends State<SplashScreen> {
           // Animated gradient background
           TweenAnimationBuilder(
             tween: Tween<double>(begin: 0, end: 1),
-            duration: const Duration(seconds: 5),
+            duration: const Duration(seconds: 6),
             builder: (context, value, child) {
               return Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [
-                      Colors.pink.withOpacity(0.3 + 0.7 * value),
-                      Colors.purple.withOpacity(0.3 + 0.7 * (1 - value)),
-                    ],
+                    colors: [Colors.pink, Colors.purple],
                   ),
                 ),
               );

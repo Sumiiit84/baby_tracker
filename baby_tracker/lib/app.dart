@@ -12,11 +12,32 @@ class BabyMoodTracker extends StatelessWidget {
     return MaterialApp(
       title: 'Baby & Mood Tracker',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.pink),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.pink[100],
+        scaffoldBackgroundColor: Colors.white,
+        textTheme: TextTheme(
+          headlineMedium: TextStyle(
+            fontSize: 24,
+
+            fontWeight: FontWeight.bold,
+            color: Colors.pink[800],
+          ),
+          bodyMedium: TextStyle(fontSize: 18, color: Colors.grey[800]),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.pink[200],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+        ),
+      ),
       initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),
-        '/': (context) => const WelcomeScreen(),
+        '/welcome': (context) => const WelcomeScreen(),
         '/setup': (context) => const BabySetupScreen(),
         '/home': (context) => const HomeScreen(),
       },
