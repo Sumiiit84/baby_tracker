@@ -1,16 +1,24 @@
-# baby_tracker
+# Baby & Mood Tracker 👶🍼
 
-A new Flutter project.
+A Flutter app to log baby events (feeding, diaper, sleep) and track moods.  
+Built as part of my **Flutter Internship Assignment (1 Month)**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Week 1 Deliverable ✅
+-  Flutter project setup
+-  Folder structure created
+-  Onboarding flow (Welcome → Baby Setup → Home)
+-  Themes implemented
+-  Data stored using SharedPreferences
+-  Splash screen with baby video (5s)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ Demo Video: [Watch here](https://drive.google.com/file/d/1Fd8J4npQOwGCBCC2q6dfE8SEicsEpZNQ/view?usp=drivesdk)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 How to Run
+ bash:-
+flutter pub get
+flutter run
+
