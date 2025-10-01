@@ -22,3 +22,30 @@ Built as part of my **Flutter Internship Assignment (1 Month)**.
 flutter pub get
 flutter run
 
+---
+
+## 🚀 Week 2 Deliverables
+
+### ✅ Completed Features
+
+- **Baby Setup Screen** to enter baby name and date of birth (saved in SharedPreferences).  
+- **Home Screen** with navigation cards:
+  - Log Feeding  
+  - Log Diaper Change  
+  - Log Sleep  
+  - View Timeline  
+- **Logout functionality** → clears saved data and returns to setup flow.  
+- **Navigation flow**:
+  - First time: `Splash → Welcome → Setup → Home`  
+  - Returning users: `Splash → Home`  
+  - After logout: `Splash → Welcome → Setup → Home`
+
+---
+
+Demo Video Week2: [Watch here](https://drive.google.com/file/d/1BKUM0iByMtI0hL0P3A-0aTODyD3YUQym/view?usp=drivesdk)
+
+
+## Tech Stack
+- **Flutter** (Dart)  
+- **SharedPreferences** (for local storage)  
+
